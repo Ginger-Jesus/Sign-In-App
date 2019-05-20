@@ -9,7 +9,10 @@
 import UIKit
 
 class OutReasonsViewController: UIViewController {
-
+    
+    @IBOutlet weak var otherReasonTextField: UITextField!
+    
+    var otherReason:String = "NO-REASON"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +20,9 @@ class OutReasonsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func DoneOut(_ sender: Any) {
-        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "1234")&reason=done&status=OUT")!
+        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "NO-ID")&reason=done&status=OUT")!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
@@ -29,7 +33,7 @@ class OutReasonsViewController: UIViewController {
     }
     
     @IBAction func LunchOut(_ sender: Any) {
-        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "1234")&reason=lunch&status=OUT")!
+        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "NO-ID")&reason=lunch&status=OUT")!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
@@ -38,7 +42,21 @@ class OutReasonsViewController: UIViewController {
         
         task.resume()
     }
-
+    
+    @IBAction func OtherOut(_ sender: Any) {
+        if otherReasonTextField.text != nil{
+            otherReason = otherReasonTextField.text!
+            let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "NO-ID")&reason=\(otherReason)&status=OUT")!
+            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                guard let data = data else { return }
+                print(String(data: data, encoding: .utf8)!)
+            }
+            task.resume()
+            
+            self.performSegue(withIdentifier: "outSegue", sender: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

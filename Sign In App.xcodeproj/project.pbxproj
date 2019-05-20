@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		707D6F572245603A0084301C /* BarcodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D6F562245603A0084301C /* BarcodeController.swift */; };
+		70B8163D228DEAE400BBC2E5 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8163C228DEAE400BBC2E5 /* DoneViewController.swift */; };
 		70CB528D22415B1500655EC8 /* InReasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB528C22415B1500655EC8 /* InReasonsViewController.swift */; };
 		70CB529122415BDB00655EC8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB529022415BDB00655EC8 /* WelcomeViewController.swift */; };
 		70D89951223AE1FA00313168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D89950223AE1FA00313168 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		707D6F562245603A0084301C /* BarcodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeController.swift; sourceTree = "<group>"; };
+		70B8163C228DEAE400BBC2E5 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		70CB528C22415B1500655EC8 /* InReasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InReasonsViewController.swift; sourceTree = "<group>"; };
 		70CB529022415BDB00655EC8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		70D8994D223AE1FA00313168 /* Sign In App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sign In App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 				70D89952223AE1FA00313168 /* InOutViewController.swift */,
 				70CB528C22415B1500655EC8 /* InReasonsViewController.swift */,
 				70FE1F0222665078005C09C5 /* OutReasonsViewController.swift */,
+				70B8163C228DEAE400BBC2E5 /* DoneViewController.swift */,
 				70D89954223AE1FA00313168 /* Main.storyboard */,
 				70D89957223AE1FC00313168 /* Assets.xcassets */,
 				70D89959223AE1FC00313168 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B8163D228DEAE400BBC2E5 /* DoneViewController.swift in Sources */,
 				70D89953223AE1FA00313168 /* InOutViewController.swift in Sources */,
 				70FE1F0322665078005C09C5 /* OutReasonsViewController.swift in Sources */,
 				707D6F572245603A0084301C /* BarcodeController.swift in Sources */,

@@ -10,19 +10,20 @@ import UIKit
 
 class InReasonsViewController: UIViewController{
 
-
+    var otherReason:String = "NO-REASON"
     
-    @IBOutlet weak var reasonsPickerView: UIPickerView!
+    @IBOutlet weak var otherReasonTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "REASON"
         // Do any additional setup after loading the view.
     }
     
     @IBAction func LateIn(_ sender: Any) {
         
-        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "1234")&reason=late&status=IN")!
+        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "NO-ID")&reason=late&status=IN")!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
@@ -34,7 +35,7 @@ class InReasonsViewController: UIViewController{
     }
     
     @IBAction func LunchIn(_ sender: Any) {
-        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "1234")&reason=lunch&status=IN")!
+        let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "NO-ID")&reason=lunch&status=IN")!
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
@@ -44,11 +45,20 @@ class InReasonsViewController: UIViewController{
         task.resume()
     }
     
+    @IBAction func OtherIn(_ sender: Any) {
+        if otherReasonTextField.text != nil{
+            otherReason = otherReasonTextField.text!
+            let url = URL(string: "https://xrds-data-site.appspot.com/checkout/checkout?id=\(studentNumber ?? "NO-ID")&reason=\(otherReason)&status=IN")!
+            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                guard let data = data else { return }
+                print(String(data: data, encoding: .utf8)!)
+            }
+            task.resume()
+            
+            self.performSegue(withIdentifier: "inSegue", sender: nil)
+        }
+    }
     
-    
-    
-    var signInReasons:[String] = ["Late", "Lunch", "Appointment", "Traffic", "Free Period"]
-    var signOutReasons:[String] = ["Free Period", "Done", "Appointment"]
     
    
     

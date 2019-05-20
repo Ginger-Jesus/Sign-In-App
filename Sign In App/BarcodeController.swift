@@ -161,7 +161,7 @@ extension BarcodeController: AVCaptureMetadataOutputObjectsDelegate {
             
             if metadataObj.stringValue != nil {
                 studentNumber = metadataObj.stringValue
-                print(studentNumber ?? "error")
+                print(studentNumber ?? "No ID number detected")
                 testForSegue()
             }
         }

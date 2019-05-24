@@ -9,8 +9,6 @@
 import UIKit
 import AVFoundation
 
-public var studentNumber:String?
-
 class BarcodeController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!

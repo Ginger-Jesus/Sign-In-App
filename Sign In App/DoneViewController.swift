@@ -18,7 +18,9 @@ class DoneViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func resetButton(_ sender: Any) {
+        studentNumber = "NO-ID"
+    }
     /*
     // MARK: - Navigation
 

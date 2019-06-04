@@ -1,4 +1,4 @@
-# Sign-In-App
+# Sign-In-App (XRDS Front Desk)
 
 ## What is it?
 Sign-In-App is an iOS app for student check-in / check-out at Crossroads School for the Arts and Sciences. This app passes a Student ID number, a reason for departure/arrival and an IN/OUT value to a server, which is accessible by the front desk. The server has a Student ID number library and adds a time stamp to the check in/out. The app has a barcode scanner that can access the numerical ID # for speedy sign in as well as a manual entry option.

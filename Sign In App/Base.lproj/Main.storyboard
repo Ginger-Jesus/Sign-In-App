@@ -36,7 +36,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKu-zp-xTb">
                                 <rect key="frame" x="20" y="42" width="728" height="514"/>
-                                <color key="backgroundColor" red="0.110337781" green="0.27996646800000002" blue="1" alpha="0.60910744859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.42335224151611328" green="0.77677458524703979" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="80"/>
                                 <color key="tintColor" red="0.110337781" green="0.27996646800000002" blue="1" alpha="0.60910744859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign in">
@@ -90,7 +90,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcr-f2-bS6">
                                 <rect key="frame" x="20" y="282" width="728" height="331"/>
-                                <color key="backgroundColor" red="0.110337781" green="0.27996646800000002" blue="1" alpha="0.60910744859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.4233522415" green="0.77677458519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="331" id="y3P-KF-DS7"/>
                                 </constraints>
@@ -187,7 +187,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny1-Gc-01b">
                                 <rect key="frame" x="20" y="276" width="728" height="316"/>
-                                <color key="backgroundColor" red="0.110337781" green="0.27996646800000002" blue="1" alpha="0.60910744859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.4233522415" green="0.77677458519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="316" id="twZ-fQ-3HD"/>
                                 </constraints>
@@ -270,7 +270,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good to go!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIv-M9-Xqd">
                                 <rect key="frame" x="20" y="37" width="728" height="828"/>
-                                <color key="backgroundColor" red="0.110337781" green="0.27996646800000002" blue="1" alpha="0.60910744859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.4233522415" green="0.77677458519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -319,7 +319,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take out your XCard!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwT-I3-Dag">
                                 <rect key="frame" x="19" y="45" width="728" height="111"/>
-                                <color key="backgroundColor" red="0.110337781" green="0.27996646800000002" blue="1" alpha="0.60910744859999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.4233522415" green="0.77677458519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="111" id="AUL-iP-4oL"/>
                                 </constraints>
@@ -456,6 +456,7 @@
         <image name="camera icon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="zIF-Ux-Nnk"/>
         <segue reference="o4m-ic-JlR"/>
         <segue reference="iAG-Em-thF"/>
         <segue reference="1Z2-J3-LwW"/>

@@ -19,39 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xrds icon" translatesAutoresizingMaskIntoConstraints="NO" id="2vJ-ea-wFn">
-                                <rect key="frame" x="0.0" y="381" width="768" height="643"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In/Sign Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cs-J8-iuj">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="373"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="373" id="Jjp-xq-7eZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="64"/>
-                                <color key="textColor" red="0.0" green="0.44106286764144897" blue="0.71930253505706787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="-3" height="3"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2cs-J8-iuj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="3QW-rY-3w7"/>
-                            <constraint firstItem="2cs-J8-iuj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Kdr-KI-zzu"/>
-                            <constraint firstItem="2vJ-ea-wFn" firstAttribute="top" secondItem="2cs-J8-iuj" secondAttribute="bottom" constant="8" symbolic="YES" id="MUa-Rp-xlM"/>
-                            <constraint firstAttribute="trailing" secondItem="2cs-J8-iuj" secondAttribute="trailing" id="VGm-1T-e3n"/>
-                            <constraint firstItem="2vJ-ea-wFn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ZFU-aZ-mS4"/>
-                            <constraint firstItem="2cs-J8-iuj" firstAttribute="leading" secondItem="2vJ-ea-wFn" secondAttribute="leading" id="dCB-nn-zQx"/>
-                            <constraint firstItem="2cs-J8-iuj" firstAttribute="trailing" secondItem="2vJ-ea-wFn" secondAttribute="trailing" id="xe0-WD-m4h"/>
+                            <constraint firstAttribute="trailing" secondItem="2vJ-ea-wFn" secondAttribute="trailing" id="BqI-BU-kXe"/>
+                            <constraint firstItem="2vJ-ea-wFn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Eab-hG-bFW"/>
+                            <constraint firstItem="2vJ-ea-wFn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="aVO-GD-lhp"/>
+                            <constraint firstItem="2vJ-ea-wFn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ePP-sB-j3R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.5625" y="374.67057101024886"/>
+            <point key="canvasLocation" x="51.5625" y="374.4140625"/>
         </scene>
     </scenes>
     <resources>
-        <image name="xrds icon" width="302" height="228"/>
+        <image name="xrds icon" width="1536" height="1536"/>
     </resources>
 </document>
